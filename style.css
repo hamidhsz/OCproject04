@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper-min.webp");
     background-size: 280px 280px;
 }
 
@@ -284,7 +284,7 @@ a:hover {
 }
 
 #bloc-2-services p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .navbar {
@@ -651,7 +651,23 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000!important;
+}
+
+#bloc-8 a {
+    color: #b6b6b6 !important;
+}
+
+.title-txt {
+    font-size: 38px;
+}
+
+.text-center {
+    color: #000 !important;
+}
+
+.site-navigation a {
+    color: #000 !important;
 }
 
 .container {
@@ -677,7 +693,11 @@ a {
 }
 
 p {
-    font-size: 12px;
+    font-size: 14px;
+}
+
+#bloc-7 .col-sm-6, #bloc-7 p {
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -777,15 +797,15 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #b25f38;
 }
 
 .tc-white {
-    color: #364577!important;
+    color: #fff!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #b25f38;
     color: #FFFFFF!important;
 }
 
@@ -803,7 +823,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #b25f38!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -816,19 +836,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg-min.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg-min.webp");
 }
 
 .bg-atlanta-20made-20sign {
-    background-image: url("img/atlanta%20made%20sign.jpg");
+    background-image: url("img/atlanta%20made%20sign-min.webp");
 }
 
 .bg-atlanta-20made-20sign-20orange {
-    background-image: url("img/atlanta%20made%20sign%20orange.jpg");
+    background-image: url("img/atlanta%20made%20sign%20orange-min.webp");
 }
 
 @media (max-width: 1024px) {
@@ -854,13 +874,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -879,8 +899,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -890,12 +910,15 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
 @media (max-width: 767px) {
+    .title-txt {
+        font-size: 30px;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
